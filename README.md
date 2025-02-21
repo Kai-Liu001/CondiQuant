@@ -1,4 +1,4 @@
-# BiMaCoSR: Binary One-Step Diffusion Model Leveraging Flexible Matrix Compression for Real Super-Resolution
+# CondiQuant: Condition Number Based Low-Bit Quantization for Image Super-Resolution
 
 [Kai Liu](https://kai-liu001.github.io/), [Dehui Wang](https://github.com/AAAtourist), [Zhiteng Li](https://zhitengli.github.io/), [Zheng Chen](https://zhengchen1999.github.io/), [Yong Guo](https://www.guoyongcs.com/), [Wenbo Li](https://fenglinglwb.github.io/), [Linghe Kong](https://www.cs.sjtu.edu.cn/~linghe.kong/), and [Yulun Zhang](http://yulunzhang.com/).
 
