@@ -101,7 +101,7 @@ If you find the code helpful in your research or work, please cite it!
 @article{liu2025condiquant,
     title={CondiQuant: Condition Number Based Low-Bit Quantization for Image Super-Resolution},
     author={Liu, Kai and Wang, Dehui and Li, Zhiteng and Chen, Zheng and Li, Wenbo and Guo, Yong and Kong, Linghe and Zhang, Yulun},
-    journal={arXiv preprint arXiv:25xx.xxxx},
+    journal={arXiv preprint arXiv:2502.15478},
     year={2025}
 }
 ```
