@@ -66,7 +66,7 @@ The testing code will be provided soon. -->
 
 ## 🔎Results
 
-We achieve state-of-the-art performance. Detailed results can be found in the paper. All visual results of BiMaCoSR will be provided soon.
+We achieve state-of-the-art performance. Detailed results can be found in the paper. All visual results of CondiQuant will be provided soon.
 
 <details>
 <summary>Click to expand</summary>
