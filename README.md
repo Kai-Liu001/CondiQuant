@@ -4,7 +4,7 @@
 
 "CondiQuant: Condition Number Based Low-Bit Quantization for Image Super-Resolution", arXiv, 2025
 
-[[arXiv]()] [[supplementary material]()] [visual results] [pretrained models]
+[[arXiv](https://arxiv.org/abs/2502.15478)] [[supplementary material](https://github.com/Kai-Liu001/CondiQuant/releases/download/Supp/supp-release.pdf)] [visual results] [pretrained models]
 
 #### 🔥🔥🔥 News
 
