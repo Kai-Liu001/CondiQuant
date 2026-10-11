@@ -1,0 +1,67 @@
+{
+  "checkpoint": "002_lightweightSR_DIV2K_s64w8_SwinIR-S_x2.pth",
+  "sha256": "193b229909ca89cd8b55de9c9e7fce146ae759d59dfcd78d8feb9dd1d6fa0fd7",
+  "scale": 2,
+  "bits": 32,
+  "fp_only": true,
+  "psnr_tolerance": 0.05,
+  "ssim_tolerance": 0.0005,
+  "meets_paper": true,
+  "results": [
+    {
+      "dataset": "Set5",
+      "psnr": 38.15183334350586,
+      "ssim": 0.9611243516654702,
+      "images": 5,
+      "paper_psnr": 38.15,
+      "paper_ssim": 0.9611,
+      "psnr_delta": 0.001833343505857954,
+      "ssim_delta": 2.4351665470212502e-05,
+      "meets_paper": true
+    },
+    {
+      "dataset": "Set14",
+      "psnr": 33.85793399810791,
+      "ssim": 0.9205733905449931,
+      "images": 14,
+      "paper_psnr": 33.86,
+      "paper_ssim": 0.9206,
+      "psnr_delta": -0.0020660018920892753,
+      "ssim_delta": -2.660945500687628e-05,
+      "meets_paper": true
+    },
+    {
+      "dataset": "B100",
+      "psnr": 32.30764097213745,
+      "ssim": 0.9012133870935637,
+      "images": 100,
+      "paper_psnr": 32.31,
+      "paper_ssim": 0.9012,
+      "psnr_delta": -0.0023590278625533756,
+      "ssim_delta": 1.3387093563688168e-05,
+      "meets_paper": true
+    },
+    {
+      "dataset": "Urban100",
+      "psnr": 32.761049118041996,
+      "ssim": 0.9339807580731039,
+      "images": 100,
+      "paper_psnr": 32.76,
+      "paper_ssim": 0.934,
+      "psnr_delta": 0.0010491180419975876,
+      "ssim_delta": -1.92419268961741e-05,
+      "meets_paper": true
+    },
+    {
+      "dataset": "Manga109",
+      "psnr": 39.113831546328484,
+      "ssim": 0.9781112467495472,
+      "images": 109,
+      "paper_psnr": 39.11,
+      "paper_ssim": 0.9781,
+      "psnr_delta": 0.003831546328484592,
+      "ssim_delta": 1.1246749547222379e-05,
+      "meets_paper": true
+    }
+  ]
+}

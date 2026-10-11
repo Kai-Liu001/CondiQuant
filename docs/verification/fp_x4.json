@@ -1,0 +1,69 @@
+{
+  "checkpoint": "002_lightweightSR_DIV2K_s64w8_SwinIR-S_x4.pth",
+  "sha256": "09fad24e32ae62722e1a055efde9921328f4137981bab0a42a4a3a806306c58e",
+  "scale": 4,
+  "bits": 32,
+  "fp_only": true,
+  "psnr_tolerance": 0.05,
+  "ssim_tolerance": 0.0005,
+  "meets_paper": true,
+  "results": [
+    {
+      "dataset": "Set5",
+      "psnr": 32.453952407836915,
+      "ssim": 0.8976536746673462,
+      "images": 5,
+      "paper_psnr": 32.45,
+      "paper_ssim": 0.8976,
+      "psnr_delta": 0.003952407836912641,
+      "ssim_delta": 5.367466734629289e-05,
+      "meets_paper": true
+    },
+    {
+      "dataset": "Set14",
+      "psnr": 28.76978084019252,
+      "ssim": 0.7857989228037886,
+      "images": 14,
+      "paper_psnr": 28.77,
+      "paper_ssim": 0.7858,
+      "psnr_delta": -0.00021915980747877484,
+      "ssim_delta": -1.0771962114519695e-06,
+      "meets_paper": true
+    },
+    {
+      "dataset": "B100",
+      "psnr": 27.69071891784668,
+      "ssim": 0.7406317377191745,
+      "images": 100,
+      "paper_psnr": 27.69,
+      "paper_ssim": 0.7406,
+      "psnr_delta": 0.0007189178466795454,
+      "ssim_delta": 3.1737719174418366e-05,
+      "meets_paper": true
+    },
+    {
+      "dataset": "Urban100",
+      "psnr": 26.476630153656007,
+      "ssim": 0.7980316731488868,
+      "images": 100,
+      "paper_psnr": 26.48,
+      "paper_ssim": 0.798,
+      "psnr_delta": -0.003369846343993288,
+      "ssim_delta": 3.1673148886746105e-05,
+      "meets_paper": true
+    },
+    {
+      "dataset": "Manga109",
+      "psnr": 30.923549179637103,
+      "ssim": 0.9150261070298764,
+      "images": 109,
+      "paper_psnr": 30.92,
+      "paper_ssim": 0.915,
+      "psnr_delta": 0.0035491796371012185,
+      "ssim_delta": 2.6107029876376586e-05,
+      "meets_paper": true
+    }
+  ],
+  "torch_version": "2.5.1+cu124",
+  "fp_checkpoint_sha256": "09fad24e32ae62722e1a055efde9921328f4137981bab0a42a4a3a806306c58e"
+}

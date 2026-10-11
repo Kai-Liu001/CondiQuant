@@ -1,0 +1,13 @@
+{
+  "archive": "CondiQuant_verified.zip",
+  "sha256": "e6b2a93011dffeb77e135487a6fae0d73eb6f7edbbd45a591a641091a1f2eca0",
+  "size_bytes": 39814275,
+  "checkpoints": 9,
+  "calibration_files": 3,
+  "benchmark_reports": 9,
+  "dataset_results": 45,
+  "evaluated_images": 2952,
+  "training_iterations": 4000,
+  "scope": "SwinIR-light, paper Table 3",
+  "format": "floating-point fake-quantization checkpoints"
+}

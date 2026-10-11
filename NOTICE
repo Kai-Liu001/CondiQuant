@@ -1,0 +1,8 @@
+CondiQuant
+Copyright 2026 Kai Liu and the CondiQuant authors.
+
+This project includes source adapted from 2DQuant, BasicSR, and SwinIR.
+2DQuant: https://github.com/Kai-Liu001/2DQuant (Apache License 2.0)
+BasicSR: https://github.com/XPixelGroup/BasicSR (Apache License 2.0)
+SwinIR: https://github.com/JingyunLiang/SwinIR (Apache License 2.0)
+Original notices in the adapted source are retained.

@@ -1,0 +1,82 @@
+{
+  "checkpoint": "net_Q_latest.pth",
+  "sha256": "19e180583d92b428cb3c4a67688583e2aafb320e64524e5253f6955b219103f3",
+  "scale": 4,
+  "bits": 3,
+  "fp_only": false,
+  "psnr_tolerance": 0.05,
+  "ssim_tolerance": 0.0005,
+  "meets_paper": true,
+  "results": [
+    {
+      "dataset": "Set5",
+      "psnr": 31.69971923828125,
+      "ssim": 0.8868880730594763,
+      "images": 5,
+      "paper_psnr": 31.62,
+      "paper_ssim": 0.8855,
+      "psnr_delta": 0.07971923828124972,
+      "ssim_delta": 0.0013880730594763024,
+      "meets_paper": true
+    },
+    {
+      "dataset": "Set14",
+      "psnr": 28.24739565168108,
+      "ssim": 0.7729003179686734,
+      "images": 14,
+      "paper_psnr": 28.2,
+      "paper_ssim": 0.7715,
+      "psnr_delta": 0.047395651681082285,
+      "ssim_delta": 0.001400317968673459,
+      "meets_paper": true
+    },
+    {
+      "dataset": "B100",
+      "psnr": 27.347596988677978,
+      "ssim": 0.7284342292764344,
+      "images": 100,
+      "paper_psnr": 27.31,
+      "paper_ssim": 0.7269,
+      "psnr_delta": 0.037596988677979226,
+      "ssim_delta": 0.001534229276434429,
+      "meets_paper": true
+    },
+    {
+      "dataset": "Urban100",
+      "psnr": 25.48409801483154,
+      "ssim": 0.7666839705756432,
+      "images": 100,
+      "paper_psnr": 25.39,
+      "paper_ssim": 0.7624,
+      "psnr_delta": 0.09409801483154112,
+      "ssim_delta": 0.004283970575643226,
+      "meets_paper": true
+    },
+    {
+      "dataset": "Manga109",
+      "psnr": 29.49333005432689,
+      "ssim": 0.8948418693720523,
+      "images": 109,
+      "paper_psnr": 29.29,
+      "paper_ssim": 0.8915,
+      "psnr_delta": 0.20333005432689077,
+      "ssim_delta": 0.003341869372052386,
+      "meets_paper": true
+    }
+  ],
+  "torch_version": "2.5.1+cu124",
+  "evaluated_at": "2026-10-10T11:26:06.589844+00:00",
+  "protocol": {
+    "test_y_channel": true,
+    "crop_border": 4,
+    "self_ensemble": false,
+    "full_image": true
+  },
+  "device": {
+    "name": "NVIDIA GeForce RTX 4090",
+    "memory_bytes": 51002015744
+  },
+  "fp_checkpoint_sha256": "09fad24e32ae62722e1a055efde9921328f4137981bab0a42a4a3a806306c58e",
+  "calibration": "cali_data_x4.pth",
+  "calibration_sha256": "edd34f9227e6094c6a856c1e6973aba638d0454287c4c0231113fbfb8e41fc45"
+}

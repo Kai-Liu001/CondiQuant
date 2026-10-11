@@ -1,0 +1,71 @@
+{
+  "checkpoint": "net_Q_500.pth",
+  "sha256": "e179df1307f43039347c619b8e5e3903414115e34ff6c7811cbd02815d8b0d14",
+  "scale": 2,
+  "bits": 4,
+  "fp_only": false,
+  "psnr_tolerance": 0.05,
+  "ssim_tolerance": 0.0005,
+  "meets_paper": true,
+  "results": [
+    {
+      "dataset": "Set5",
+      "psnr": 38.02117767333984,
+      "ssim": 0.9604366502544398,
+      "images": 5,
+      "paper_psnr": 38.03,
+      "paper_ssim": 0.9605,
+      "psnr_delta": -0.008822326660158808,
+      "ssim_delta": -6.3349745560215e-05,
+      "meets_paper": true
+    },
+    {
+      "dataset": "Set14",
+      "psnr": 33.527331488473074,
+      "ssim": 0.9182516216599919,
+      "images": 14,
+      "paper_psnr": 33.5,
+      "paper_ssim": 0.918,
+      "psnr_delta": 0.02733148847307376,
+      "ssim_delta": 0.0002516216599918186,
+      "meets_paper": true
+    },
+    {
+      "dataset": "B100",
+      "psnr": 32.16105766296387,
+      "ssim": 0.8992944325028457,
+      "images": 100,
+      "paper_psnr": 32.16,
+      "paper_ssim": 0.8993,
+      "psnr_delta": 0.0010576629638734403,
+      "ssim_delta": -5.567497154301826e-06,
+      "meets_paper": true
+    },
+    {
+      "dataset": "Urban100",
+      "psnr": 32.06352867126465,
+      "ssim": 0.9283086472719649,
+      "images": 100,
+      "paper_psnr": 32.03,
+      "paper_ssim": 0.9282,
+      "psnr_delta": 0.03352867126464787,
+      "ssim_delta": 0.0001086472719649123,
+      "meets_paper": true
+    },
+    {
+      "dataset": "Manga109",
+      "psnr": 38.64984876300217,
+      "ssim": 0.9771129991224562,
+      "images": 109,
+      "paper_psnr": 38.57,
+      "paper_ssim": 0.9769,
+      "psnr_delta": 0.07984876300216825,
+      "ssim_delta": 0.00021299912245620334,
+      "meets_paper": true
+    }
+  ],
+  "torch_version": "2.5.1+cu124",
+  "fp_checkpoint_sha256": "193b229909ca89cd8b55de9c9e7fce146ae759d59dfcd78d8feb9dd1d6fa0fd7",
+  "calibration": "cali_data_x2.pth",
+  "calibration_sha256": "a42e406a660c81c84dc29be6ebbbc9c66597ac4a9ef5c1f314bbd5b71da39f11"
+}

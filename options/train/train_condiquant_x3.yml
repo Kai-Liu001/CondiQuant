@@ -1,0 +1,117 @@
+bit: 4
+cali_data: keydata/cali_data_x3.pth
+condiquant:
+  enabled: true
+  exclude_mlp: true
+  lambda_reg: 0.003
+  learning_rate: 0.01
+  num_iterations: 50
+datasets:
+  train:
+    batch_size_per_gpu: 16
+    dataroot_gt: datasets/DF2K/HR
+    dataroot_lq: datasets/DF2K/LR_bicubic/X3
+    dataset_enlarge_ratio: 1
+    filename_tmpl: '{}x3'
+    gt_size: 192
+    io_backend:
+      type: disk
+    name: DF2K
+    num_prefetch_queue: 16
+    num_worker_per_gpu: 0
+    pin_memory: true
+    prefetch_mode: null
+    task: SR
+    type: LRCalibrationDataset
+    use_hflip: true
+    use_rot: true
+    use_shuffle: true
+  val_0:
+    dataroot_gt: datasets/benchmark/Set5/HR
+    dataroot_lq: datasets/benchmark/Set5/LR_bicubic/X3
+    filename_tmpl: '{}x3'
+    io_backend:
+      type: disk
+    name: Set5
+    task: SR
+    type: PairedImageDataset
+dist_params:
+  backend: nccl
+  port: 29500
+gpu: 0
+logger:
+  print_freq: 10
+  save_checkpoint_freq: 100.0
+  use_tb_logger: false
+  wandb:
+    project: null
+    resume_id: null
+manual_seed: 3407
+model_type: CondiQuantModel
+name: train_CondiQuant_x3_bit4
+network_Q:
+  depths:
+  - 6
+  - 6
+  - 6
+  - 6
+  embed_dim: 60
+  img_range: 1.0
+  img_size: 64
+  mlp_ratio: 2
+  num_heads:
+  - 6
+  - 6
+  - 6
+  - 6
+  type: SwinIR
+  upsampler: pixelshuffledirect
+  upscale: 3
+  window_size: 8
+num_gpu: 1
+path:
+  pretrain_network_Q: null
+  strict_load_Q: true
+pathFP:
+  pretrain_network_FP: experiments/pretrained_models/SwinIR/002_lightweightSR_DIV2K_s64w8_SwinIR-S_x3.pth
+  strict_load_FP: true
+quant:
+  bound_init: dobi
+  hook_per_block: false
+  hook_per_layer: true
+  qkv_separation: true
+scale: 3
+train:
+  feature_loss:
+    loss_weight: 5
+    reduction: mean
+    type: MSELoss
+  optim_bound:
+    betas:
+    - 0.9
+    - 0.99
+    lr: 0.01
+    type: Adam
+    weight_decay: 0
+  pixel_opt:
+    loss_weight: 1.0
+    reduction: mean
+    type: L1Loss
+  scheduler:
+    milestones:
+    - 10000
+    type: MultiStepLR
+  total_iter: 4000
+  warmup_iter: -1
+val:
+  metrics:
+    psnr:
+      crop_border: 3
+      test_y_channel: true
+      type: calculate_psnr
+    ssim:
+      crop_border: 3
+      test_y_channel: true
+      type: calculate_ssim
+  save_img: false
+  val_freq: 100.0
